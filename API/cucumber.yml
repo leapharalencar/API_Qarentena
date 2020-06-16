@@ -1,0 +1,8 @@
+default: -p html_report -p prd
+
+### Ambientes ###
+prd: AMBIENTE=prd
+hlg: AMBIENTE=hlg
+
+### Reports ###
+html_report: --format pretty -f html -o reports/features_report.html
