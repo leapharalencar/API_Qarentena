@@ -5,5 +5,5 @@ prd: AMBIENTE=prd
 hlg: AMBIENTE=hlg
 
 ### Reports ###
-html_report: --format pretty -f html -o reports/features_report.html
+html_report: --format pretty -f html -o reports/index.html
 json_report: -f json -o reports/report.json
