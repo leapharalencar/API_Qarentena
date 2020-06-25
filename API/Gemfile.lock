@@ -41,6 +41,7 @@ GEM
       activesupport (>= 4.2.0)
     faker (2.12.0)
       i18n (>= 1.6, < 2)
+    ffi (1.13.1)
     ffi (1.13.1-x64-mingw32)
     httparty (0.18.1)
       mime-types (~> 3.0)
@@ -81,6 +82,7 @@ GEM
     zeitwerk (2.3.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
