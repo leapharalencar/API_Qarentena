@@ -5,3 +5,4 @@ gem 'factory_bot'   # gem que ajuda na criação payload https://github.com/thou
 gem 'faker' # gem que gera dados fake https://github.com/faker-ruby/faker.
 gem 'httparty'  # gem responsável pelas requisições de web services https://github.com/jnunemaker/httparty.
 gem 'rspec' # gem que permite fazer as asserções https://rspec.info/.
+gem 'jekyll' # gem para publicar o report no gitlab pages
