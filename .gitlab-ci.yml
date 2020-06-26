@@ -1,0 +1,12 @@
+image: "ruby:2.5"
+
+before_script:
+  - bundle install
+
+pages:
+  script:
+    - bundle exec cucumber
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - './public/reports/'

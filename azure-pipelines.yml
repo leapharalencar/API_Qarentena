@@ -1,0 +1,24 @@
+trigger:
+  - master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+  - task: UseRubyVersion@0
+    inputs:
+      versionSpec: '= 2.5'
+  - task: Bash@3
+    inputs:
+      targetType: 'inline'
+      script: |
+        gem install bundler
+        bundle install
+        bundle exec cucumber
+
+  - task: PublishCucumberReport@1
+    inputs:
+      jsonDir: './reports'
+      outputPath: './reports'
+      theme: 'bootstrap'
+      reportSuiteAsScenarios: true
